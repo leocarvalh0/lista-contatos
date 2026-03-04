@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import * as S from './styles'
 import ContatoClass from '../../models/contato'
 import { editar, remover } from '../../store/reducers/contatos'
-import { BotaoSalvar } from '../../styles'
+import { Botao, BotaoSalvar } from '../../styles'
 
 type Props = ContatoClass
 
@@ -84,7 +84,7 @@ const Contato = ({
           </>
         ) : (
           <>
-            <S.Botao onClick={() => setEstaEditando(true)}>Editar</S.Botao>
+            <Botao onClick={() => setEstaEditando(true)}>Editar</Botao>
             <S.BotaoCancelarERemover onClick={() => dispatch(remover(id))}>
               Excluir
             </S.BotaoCancelarERemover>

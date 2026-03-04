@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   max-width: 400px;
+  padding-top: 24px;
 `
 
 export const Form = styled.form`

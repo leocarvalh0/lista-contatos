@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import { Botao } from '../../styles'
 
 export const Contato = styled.div`
   padding: 16px;
@@ -35,17 +36,6 @@ export const DadosContato = styled.div`
 export const Acoes = styled.div`
   margin-top: auto;
   display: flex;
-`
-
-export const Botao = styled.button`
-  margin-right: 8px;
-  padding: 4px 8px;
-  background-color: ${variaveis.azul};
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  border: none;
-  border-radius: 8px;
 `
 
 export const BotaoCancelarERemover = styled(Botao)`

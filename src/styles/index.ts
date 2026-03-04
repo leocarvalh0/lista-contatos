@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import { Botao } from '../components/Contato/styles'
 import variaveis from './variaveis'
 
 const EstiloGlobal = createGlobalStyle`
@@ -42,6 +41,17 @@ export const TituloHeader = styled.h1`
 export const Container = styled.div`
   max-width: 50%;
   margin: 0 auto;
+`
+
+export const Botao = styled.button`
+  margin-right: 8px;
+  padding: 4px 8px;
+  background-color: ${variaveis.azul};
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
 `
 
 export const BotaoSalvar = styled(Botao)`

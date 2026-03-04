@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { FormEvent, useState } from 'react'
 
 import { Form, Container } from './styles'
-import { BotaoSalvar, TituloHeader } from '../../styles'
+import { Botao, BotaoSalvar, TituloHeader } from '../../styles'
 import { cadastrar } from '../../store/reducers/contatos'
 
 const Formulario = () => {
@@ -29,6 +29,7 @@ const Formulario = () => {
 
   return (
     <Container>
+      <Botao onClick={() => navigate('/')}>Voltar a lista de contatos</Botao>
       <TituloHeader>Novo cadastro</TituloHeader>
       <Form onSubmit={cadastrarContato}>
         <input
