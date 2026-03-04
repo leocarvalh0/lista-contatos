@@ -4,7 +4,6 @@ import { FormEvent, useState } from 'react'
 
 import { Form, Container } from './styles'
 import { BotaoSalvar, TituloHeader } from '../../styles'
-import Contato from '../../models/contato'
 import { cadastrar } from '../../store/reducers/contatos'
 
 const Formulario = () => {
